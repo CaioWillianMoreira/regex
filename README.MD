@@ -3,7 +3,8 @@
 ## Para rodar a aplicação
 
 - navegue até a raiz do projeto e digite o comando
-###### nodemon app
+- npm install 
+- nodemon app
 
 ## O QUE É E PRA QUE SERVE UMA REGEX?
 
