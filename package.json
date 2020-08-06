@@ -1,0 +1,25 @@
+{
+  "name": "regex",
+  "version": "1.0.0",
+  "description": "- Reguex é um tipo de linguagem informal que serve pra identificar padrões de caracteres dentro de um texto, pode identificar trechos de texto específico, datas em formulários, e-mails, validações etc...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioWillianMoreira/regex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioWillianMoreira/regex/issues"
+  },
+  "homepage": "https://github.com/CaioWillianMoreira/regex#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "nodemon": "^2.0.4"
+  }
+}
