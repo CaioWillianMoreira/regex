@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = 3003
 
 app.use(express.static(__dirname + '/public'))
 
@@ -13,6 +14,6 @@ app.get('*', function(req, res){
     res.render('pages/404')
 });
 
-app.listen(3000, function(){
-    console.log("Aplicação rodando na porta 3000 ")
+app.listen(port, function(){
+    console.log(`Aplicação rodando na porta ${ port }`)
 });
