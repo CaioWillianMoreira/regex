@@ -2,56 +2,151 @@
 <html>
   <head>
     <% include ../partials/head %>
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <% include ../partials/header %>
-      <div class="wrapper">
-        <h1 class="box-title">Checkout</h1>
-        <div class="price-total">
-          <span>Preço </span>500.00 R$</div>
-        <form>
-          <div class="form-el">
-            <label>Nome</label>
-            <input name="name" type="text">
-          </div>
-          <div class="form-el">
-            <label>e-mail</label>
-            <input name="email" type="text">
-          </div>
-          <div class="form-el">
-            <label>CPF</label>
-            <input name="cpf" type="text">
-          </div>
-          <div class="form-el">
-            <label>Telefone</label>
-            <input name="telefone" type="text">
-          </div>
-          <div class="form-el">
-            <label>CEP</label>
-            <input name="cep" type="text">
-          </div>
-          <div class="form-el">
-            <label>Endereço</label>
-            <input name="endereco" type="text">
-          </div>
-            <div class="form-el col-2">
-            <label>CVV</label>
-            <input name="cvv" type="text" maxlength="3">
-          </div>
-          <div class="form-el col-2">
-            <label>Validade</label>
-            <input name="date-card" type="text">
-          </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Sua compra</h2>
+              </div><!-- fim .panel-heading -->
+              <div class="panel-body">
+                <figure>
+                  <img src="img/produto.png" alt="Fuzzy Cardigan" class="img-thumbnail img-responsive">
+                </figure>
+                <dl>
+                  <dt>Produto</dt>
+                  <dd>Camiseta feminina azul</dd>
 
-          <div class="form-el cf">
-            <button><svg id="padlock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-      <path id="lock-18-icon" d="M256,193.663c-73.85,0-133.717,59.867-133.717,133.717S182.15,461.097,256,461.097  c73.852,0,133.717-59.867,133.717-133.717S329.852,193.663,256,193.663z M275.381,329.845c-4.387,4.076-6.881,9.795-6.881,15.785  v22.941h-23V345.63c0-5.986-2.496-11.711-6.881-15.785c-5.302-4.93-8.619-11.963-8.619-19.773c0-14.912,12.088-27,27-27  s27,12.088,27,27C284,317.882,280.683,324.915,275.381,329.845z M204.833,171.831c-18.272,6.021-35.095,15.07-50,26.812v-47.074  c0-55.508,45.159-100.666,100.667-100.666s100.667,45.158,100.667,100.666v46.301c-14.896-11.549-31.688-20.461-50-26.363v-19.938  c0-27.938-22.729-50.666-50.667-50.666s-50.667,22.729-50.667,50.666V171.831z"/>
-      </svg>PAGAR</button>
-          </div>
+                  <dt>Cor</dt>
+                  <dd>Azul</dd>
+
+                  <dt>Tamanho</dt>
+                  <dd>40</dd>
+
+                  <dt>Preço</dt>
+                  <dd>R$ 129,00</dd>
+                </dl>
+              </div><!-- fim .panel-body -->
+            </div><!-- fim .panel -->
+          </div><!-- fim col-sm-4 -->
+          <form class="col-sm-8" action="/enviado">
+          <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" class="form-control" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cpf">CPF</label>
+              <input type="text" class="form-control" id="cpf" name="cpf">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="text" class="form-control" id="telefone" name="telefone">
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="sim" name="spam" checked>
+                Quero receber novidades da Kunstee
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Informações de entrega</legend>
+            <div class="form-group">
+              <label for="CEP">CEP</label>
+              <input type="text" class="form-control" id="cep" name="cep">
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço</label>
+              <textarea type="text" class="form-control" id="endereco" name="endereco"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="complemento">Complemento</label>
+              <input type="text" class="form-control" id="complemento" name="complemento" placeholder="apto, bloco">
+            </div>
+            <div class="form-group">
+              <label for="data-entrega">Tipo</label>
+              <select class="form-control" id="data-entrega" name="data-entrega">
+                <option value="03/08/2015">Entrega expressa</option>
+                <option value="07/12/2015">Entrega comum</option>
+                <option value="21/10/2017">Entrega econômica</option>
+              </select>
+              <p class="help-block" id="data-formatada">Entrega prevista para 3 de agosto de 2015.</p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Doação</legend>
+            <div class="form-group">
+              <label for="causa-doacao">Causa</label>
+              <select class="form-control" id="causa-doacao" name="causa-doacao">
+                <option value="criancas">Crianças</option>
+                <option value="natureza">Natureza</option>
+                <option value="animais">Animais</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="valor-doacao">Valor</label>
+              <div class="input-group">
+                <span class="input-group-addon">R$</span>
+                <input type="number" step="0.01" class="form-control" id="valor-doacao" name="valor-doacao" value="0.00">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Cartão de crédito</legend>
+
+            <div class="form-group">
+              <label for="bandeira-cartao">Bandeira</label>
+              <select name="bandeira-cartao" id="bandeira-cartao"
+                  class="form-control">
+                <option value="master">MasterCard</option>
+                <option value="visa">VISA</option>
+                <option value="amex">American Express</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="numero-cartao">Número</label>
+              <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+            </div>
+
+            <div class="form-group">
+              <label for="validade-cartao">Validade</label>
+              <input type="text" class="form-control" id="validade-cartao" name="validade-cartao">
+            </div>
+
+            <div class="form-group">
+              <label for="cvv-cartao">CVV</label>
+              <input type="text" maxlength="3" class="form-control" id="cvv-cartao" name="cvv-cartao">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            Confirmar Pedido
+          </button>
         </form>
-      </div>
-      <script src="js/script.js"></script>
+        </div><!-- fim row -->
+      </div><!-- container -->
+    </main>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/validacao.js"></script>
     <% include ../partials/footer %>
   </body>
 </html>

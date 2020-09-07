@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Carrinho</title>
+    <head>
+      <% include ../partials/head %>
+    </head>
+  <body>
+    <% include ../partials/header %>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title">Sua compra</h2>
+              </div><!-- fim .panel-heading -->
+              <div class="panel-body">
+                <figure>
+                  <img src="img/produto.png" alt="Fuzzy Cardigan" class="img-thumbnail img-responsive">
+                </figure>
+                <dl>
+                  <dt>Produto</dt>
+                  <dd>Camiseta feminina azul</dd>
+
+                  <dt>Cor</dt>
+                  <dd>Azul</dd>
+
+                  <dt>Tamanho</dt>
+                  <dd>40</dd>
+
+                  <dt>Preço</dt>
+                  <dd>R$ 129,00</dd>
+                </dl>
+              </div><!-- fim .panel-body -->
+            </div><!-- fim .panel -->
+          </div><!-- fim col-sm-4 -->
+          <form class="col-sm-8" action="/home">
+          <fieldset>
+            <legend>Compra efetuada com sucesso!</legend>
+
+            <div class="form-group">
+              <p>Obrigado por comprar na Kunstee!</p>
+              <p>Um email será enviado em breve confirmando seus dados de envio.</p>
+            </div>
+
+          </fieldset>
+          <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-thumbs-up"></span>Voltar
+          </button>
+        </form>
+        </div><!-- fim row -->
+      </div><!-- container -->
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/validacao.js"></script>
+    <% include ../partials/footer %>
+  </body>
+</html>
