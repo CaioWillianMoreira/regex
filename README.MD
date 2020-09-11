@@ -15,5 +15,8 @@
 
 - Reguex é um tipo de linguagem informal que serve pra identificar padrões de caracteres dentro de um texto, pode identificar trechos de texto específico, datas em formulários, e-mails, validações etc...
 
+## VALIDAÇÕES
+
+- __\d__ representa dígitos numericos
 
 
