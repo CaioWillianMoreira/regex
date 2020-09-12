@@ -38,3 +38,5 @@
 - __()__ Parênteses são responsáves por agrupar expressões
 
 - __' '__ O caracter de espaço pode ser representado literalmente
+
+- __(){n}__ Permite repetir grupos varias vezes: ex: (/d){2}
