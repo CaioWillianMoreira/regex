@@ -34,3 +34,7 @@
 - __\\w__ Representa todas as letras, incluindo dígitos e caracteres especiais
 
 - __*__ Aceita qualquer número de caracteres ou nenhum podendo verificar zero ou mais vezes.
+
+- __()__ Parênteses são responsáves por agrupar expressões
+
+- __' '__ O caracter de espaço pode ser representado literalmente
