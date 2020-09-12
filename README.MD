@@ -23,4 +23,4 @@
 
 - __?__ Verifica se o caracter anterior ao (?) pode ou não existir, tornando o mesmo opcional ou não.
 
-- __\.__ Para escapar caracteres especiais é necessário colocar uma barra envertida
+- __/\.__ Para escapar caracteres especiais é necessário colocar uma barra envertida
