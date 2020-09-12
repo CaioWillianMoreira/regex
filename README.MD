@@ -23,6 +23,7 @@
 
 - __?__ Verifica se o caracter anterior ao (?) pode ou não existir, tornando o mesmo opcional ou não.
 
+<<<<<<< HEAD
 - __\.__ Para escapar caracteres especiais é necessário colocar uma barra envertida
 
 - __[]__ Utilizado para representar a entrada e um único caracter. Ex: __[abc]__ só será permitido a entrada de um destes caracteres digitados uma única vez. (a ou b ou c).
@@ -31,3 +32,6 @@
 
 - __[a-z]__ O hífen Cria um intervalo entre a letra A e Z podendo assim definir a entrade de qualquer dígito existente entre eles.
 
+=======
+- __\\.__ Para escapar caracteres especiais é necessário colocar uma barra envertida
+>>>>>>> 01c475796b225c5f2a99714a88feadafd424f989
