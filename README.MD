@@ -29,5 +29,8 @@
 
 - __+__ Permite repetições de caracteres, com a condição de existir pelo menos 1 vez. Ex: [abcdefghijklmnopqrstuvxz]+
 
-- __[a-z]__ O hífen Cria um intervalo entre a letra A e Z podendo assim definir a entrade de qualquer dígito existente entre eles.
+- __[a-z]__ O hífen Cria um intervalo entre a letra A e Z podendo assim definir a entrade de qualquer dígito existente entre eles. obs [a-ZA-Z] permitirá letras maiúsculas.
 
+- __\\w__ Representa todas as letras, incluindo dígitos e caracteres especiais
+
+- __*__ Aceita qualquer número de caracteres ou nenhum podendo verificar zero ou mais vezes.
