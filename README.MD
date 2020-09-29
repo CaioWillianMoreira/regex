@@ -40,3 +40,5 @@
 - __' '__ O caracter de espaço pode ser representado literalmente
 
 - __(){n}__ Permite repetir grupos varias vezes: ex: (/d){2}
+
+- __|__ Representa OU / OR em um padrão
