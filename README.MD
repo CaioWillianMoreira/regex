@@ -23,7 +23,7 @@
 
 - __?__ Verifica se o caracter anterior ao (?) pode ou não existir, tornando o mesmo opcional ou não.
 
-- __\\.__ Para escapar caracteres especiais é necessário colocar uma barra envertida
+- __\\.__ Para escapar caracteres especiais é necessário colocar uma barra invertida
 
 - __[]__ Utilizado para representar a entrada e um único caracter. Ex: __[abc]__ só será permitido a entrada de um destes caracteres digitados uma única vez. (a ou b ou c).
 
